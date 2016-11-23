@@ -130,7 +130,7 @@ else{
 }
 
 else{
-        //out of bounds.
+//out of bounds.
     return -1;
 
 }
@@ -247,8 +247,7 @@ dest2 = new_set(255);
 printf("\n union ");
 bitset_union(dest2,set1,set2);
 
-//printSet(set1);
-//printSet(set2);
+
 printSet(dest2);
 
 
