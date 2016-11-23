@@ -7,8 +7,6 @@
 #define LeftChild(x)  (2*X) + 1
 
 
-
-
 struct node{
 int isLeaf;
 int freq;
@@ -131,12 +129,6 @@ return tempNode;
 
 void buildMinHeap(struct minHeap* thisHeap){
 
-//int heapSize = thisHeap->size - 2;
-//int i;
-//for(i=(heapSize/2);i>=0;i--){
-//    minHeapify(thisHeap, i);
-//}
-
 int size = thisHeap->size -1;
 int i;
 for(i = (size-1)/2; i>=0;--i){
@@ -210,7 +202,6 @@ void decodeHuffmanTree(struct node* root, int arrayCode[], int arrayIx){
 
 //traverse until all leafs not found.
 
-//printf("\n%d:",arrayIx);
 if(root->right!=NULL){
     arrayCode[arrayIx] =1;
     decodeHuffmanTree(root->right,arrayCode,arrayIx+ 1);
@@ -259,6 +250,7 @@ decodeHuffmanTree(root,array,ix);
 
 int main(int argc, char ** argv)
 {
+ 
   FILE *pToFile = fopen("msg.txt","r");
   char singleChar;
   int *freqs;
@@ -280,17 +272,7 @@ int main(int argc, char ** argv)
 printf("start \n");
 HuffmanCode(freqs,256);
 
-// for(i=0;i<256;i++){
-//
-//             if(freqs[i]>0)
-//        {
-//        printf("\n ASCII:%d char:%c\t %d",i,i,freqs[i]);
-//
-//       }
-//
-// }
 printf("\n \n");
-//HuffmanCode(freqs,256);
 
   printf("\n END OFPROGRAM");
 
