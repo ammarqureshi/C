@@ -280,15 +280,7 @@ int main(int argc, char ** argv)
 
 HuffmanCode(freqs,256);
 
-// for(i=0;i<256;i++){
-//
-//             if(freqs[i]>0)
-//        {
-//        printf("\n ASCII:%d char:%c\t %d",i,i,freqs[i]);
-//
-//       }
-//
-// }
+
 printf("\n \n");
 //HuffmanCode(freqs,256);
 
